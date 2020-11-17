@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>알짜배기</title>
+
+  <style>
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    ul,
+    div,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+    }
+
+    .body {
+      background-color: rgb(195, 220, 230);
+    }
+
+    .header {
+      text-align: left;
+      height: 80px;
+      background-color: rgb(195, 220, 230);
+      border-bottom: 1px solid #d3d3d3;
+      vertical-align: middle;
+    }
+
+    .header .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+      padding-left: 15%;
+    }
+
+    .header span {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+
+    .header div a,
+    span {
+      margin-right: 10px;
+      color: rgba(43, 42, 42, 0.836);
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 2.5;
+      padding: 0;
+      text-decoration: none;
+      font-family: Courier;
+      font-weight: 400;
+    }
+
+    .header div a {
+      margin-left: 20px;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      grid-template-areas: 'aside content'
+    }
+
+    .main .aside {
+      grid-area: aside;
+      background-color: rgba(254, 255, 211, 0.308);
+      border-right: 1px solid #d3d3d3;
+      padding: 30px;
+    }
+
+    .main .aside ul {
+      font-size: 1.25em;
+      margin: 40px 8px;
+      line-height: 1.5em
+    }
+
+    .main .aside ul.ul li {
+      color: black;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 0.8em;
+      margin: 7px 11px;
+      line-height: 1.6em;
+    }
+
+    .main .aside ul.ul {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: rgb(44, 55, 59);
+      margin: 32px 8px;
+      line-height: 1.5em
+    }
+
+    .main .aside ul li {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .main .aside ul a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .main .content {
+      grid-area: content;
+      min-height: calc(100vh - 196px);
+      background-color: whitesmoke
+    }
+
+    .main .content .section.gallery {
+      padding: 16px
+    }
+
+    .footer {
+      background-color: #383838;
+      padding: 20px 0;
+      font-size: 1.2rem;
+      text-align: center
+    }
+
+    .footer div {
+      color: lightgray;
+      text-decoration: none
+    }
+
+    .main .content .section.gallery {
+      padding: 16px;
+      align-items: left;
+    }
+
+    .main .content .section.gallery .article .article__text {
+      padding-top: 20px;
+      padding-bottom: 25px;
+      text-shadow: cadetblue;
+    }
+
+    .main .content .section.gallery .article {
+      font-family: candara;
+      margin: 5px 40px;
+      font-weight: 500;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      font-weight: 550;
+      font-size: 20px
+    }
+
+    .main .content .section.gallery .article img {
+      padding: 5px
+    }
+  </style>
+</head>
+
+<body ondragstart="return false" onselect="return false" oncontextmenu="">
+  <header class="header">
+    <div><a class="logo">Portfolio</a>
+      <span class="name">by Seoyoon Moon</span><a href="https://github.com/seoyoon7171"> github:
+        seoyoon7171</a> <a href="mailto:msy990701@naver.com"> e-mail 💨</a></div>
+  </header>
+  <main class="main">
+    <aside class="aside">
+      <ul class="ul" style="list-style:none"> 파이썬
+        <li class="li" id="a1"><a href="https://repl.it/@JenapoMoon/hwanjeon-peurogeuraem-python" target="_blank">>
+            웹스크래퍼: 환전 </a>
+        </li class="li">
+        <li class="li" id="a2"><a href="https://repl.it/@JenapoMoon/albaceongug-saiteu-seukeuraeping-python"
+            target="_blank">>
+            웹스크래서: 일자리</a></li>
+      </ul>
+      <ul class="ul" style="list-style:none"> JS 만들기
+        <li class="li" id=b1><a href="https://seoyoon7171.github.io/js-chrome-me/" target="_blank">> 크롬 웹 만들기 </a></li>
+        <li class="li" id=b2><a href="https://seoyoon7171.github.io/paint-with-js" target="_blank">> 그림판 만들기 </a></li>
+      </ul>
+      <ul class="ul" style="list-style:none"> 챌린지 참여
+        <li class="li" id=c1><a href="https://seoyoon7171.github.io/3-mouseHandler/" target="_blank">> 셋째날</a></li>
+        <li class="li" id=c2><a href="https://seoyoon7171.github.io/4-browserHandler" target="_blank">> 넷째날</a></li>
+        <li class="li" id=c3><a href="https://seoyoon7171.github.io/5-untilChrismas" target="_blank">> 다섯째날</a></li>
+        <li class="li" id=c4><a href="https://seoyoon7171.github.io/6-where-r-u-from" target="_blank">> 여섯째날</a></li>
+        <li class="li" id=c5><a href="https://seoyoon7171.github.io/7-8-pending-and-finished" target="_blank">>
+            일곱여덟째날</a></li>
+        <li class="li" id=c6><a href="https://seoyoon7171.github.io/9-10-random-number-game" target="_blank">> 아홉열째날</a>
+        </li>
+        <li class="li" id=c7><a href="https://seoyoon7171.github.io/11-12-calculator" target="_blank">> 열한열두째날</a></li>
+      </ul>
+      <ul class="ul" style="list-style:none"> React JS
+        <li class="li" id=d1><a href="https://seoyoon7171.github.io/my_app/#/" target="_blank">> 영화 웹사이트 만들기</a></li>
+      </ul>
+    </aside>
+    <div class="content">
+      <section class="section gallery">
+        <article class="article">
+          <div class="article__text">파이썬</div>
+          <img class="img" src="스크래핑/알바천국 스크래핑 진행 상황표시.png" alt="3" width="350" />
+          <img class="img" src="스크래핑/알바천국csv 파일생성.png" alt="4" width="300" />
+          <br>
+          <img class="img" src="스크래핑/환전 결과 마지막부분.png" alt="3" width="300" />
+          <img class="img" src="스크래핑/환전 첫부분.png" alt="4" width="300" />
+        </article>
+        <br>
+        <article class="article">
+          <div class="article__text">JS 만들기</div>
+          <img class="img" src="결과물 캡쳐본(웹).png" alt="크롬웹" width="300" />
+          <img class="img" src="결과물캡쳐.png" alt="그림판" width="300" />
+        </article>
+        <br>
+        <article class="article">
+          <div class="article__text">챌린지 참여</div>
+          <img class="img" src="챌린지/마우스 eventlistener.png" alt="3" width="300" />
+          <img class="img" src="챌린지/브라우저 크기변화.png" alt="4" width="300" />
+          <img class="img" src="챌린지/option 값 고정.png" alt="5" width="300" />
+          <img class="img" src="챌린지/크리스마스.png" alt="6" width="300" />
+          <img class="img" src="챌린지/할일 분류 버튼이동.png" alt="78" width="300" />
+          <img class="img" src="챌린지/숫자맞추기게임.png" alt="910" width="300" />
+          <img class="img" src="챌린지/계산기.png" alt="1112" width="300" />
+        </article>
+        <br>
+        <article class="article">
+          <div class="article__text">React JS</div>
+          <img class="img" src="Home.png" alt="home" width="360" />
+          <img class="img" src="Detail.png" alt="detail" width="360" />
+        </article>
+      </section>
+  </main>
+  <footer class="footer">
+    <div> 건국대학교 2020 Learning & Sharing | 알짜배기 </div>
+  </footer>
+  <script src="index.css"></script>
+</body>
+
+</html>
